@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube-Design</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header {
+            font-size: 25px;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .search-bar {
+            color:gray;
+            font-size: 20px;
+            border:1px solid gray;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            width: 400px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .profile-pic {
+            border-radius: 30px;
+            border:1px solid black;
+        }
+        .shortcut-buttons span {
+            margin-right: 20px;
+        }
+        .search-area {
+            display: flex;
+        }
+        .bi-mic-fill {
+            margin-left: 20px;
+        }
+        .grid-layout{
+            display: grid;
+            grid-template-columns: 1fr 11fr;
+            height: 100vh;
+        }
+        .sidebar{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .nav-item{
+            font-size: 18px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        article{
+            margin-top: 20px;
+            font-family: arial;
+            display: grid;
+            grid-template-columns: 10fr 2fr;
+
+        }
+        .title{
+            font-size: 25px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            
+        }
+        .sub-title{
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        .subscribe{
+            padding: 5px;
+            background-color: black;
+            width: 120px;
+            border-radius: 10px;
+            color: white;
+        }
+        .text{
+            margin-bottom: 10px;
+
+        }
+        a{
+            text-decoration: none;
+        }
+        .categories{
+            padding: 20px;
+            font-family: arial;
+            font-size:17px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            color: gray;
+            text-transform: uppercase;
+            }
+            .videos{
+                padding: 20px;
+                font-family: arial;
+                font-size: 20px;
+            }
+            .thumbnails{
+                display: grid;
+                grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+            }
+            iframe{
+                width:220px;
+                height: 130px;
+            }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <span class="bi bi-justify"></span>
+            <img src="public/images/utube.jpg" width="100">
+        </div>
+        <div class="search-area">
+            <div class="search-bar">
+                <span>Search</span>
+                <span class="bi bi-search"></span>
+            </div>
+            <span class="bi bi-mic-fill"></span>
+        </div>
+        <div class="shortcut-buttons">
+            <span class="bi bi-camera-video"></span>
+            <span class="bi bi-bell-fill"></span>
+            <img class="profile-pic" src="public/images/men.jpg" width="30" height="30">
+        </div>
+    </header>
+    <section class="grid-layout">
+        <nav class="sidebar">
+          <div class="nav-item">
+            <span class="bi bi-house-door"></span>
+            <span>Home</span>
+          </div>
+          <div class="nav-item">
+            <span class="bi bi-film"></span>
+            <span>Shorts</span>
+          </div>
+          <div class="nav-item">
+            <span class="bi bi-collection-play"></span>
+            <span>Subscribe</span>
+          </div>
+          <div class="nav-item">
+            <span class="bi bi-camera-video"></span>
+            <span>Library</span>
+          </div>
+        </nav>
+        <main>
+            <div>
+                <img src="public/images/women.jpg" width="100%">
+            </div>
+            <article>
+                <div>
+                    <img src="public/images/watch.jpg" width="140">
+                    <div class="title">Swetha's Fashion</div>
+                    <div class="sub-title">@Swetha1.5M subscribers 1k videos</div>
+                    <div class="text">Here you will get all dressing styles and Designs...</div>
+                    <div><a href="instagram.com/swetha_yadav__">instagram.com/swetha_yadav__</a>and 3 more links</div>
+                </div>
+                <div>
+                    <div class="subcribe"><span class="bi bi-bell-fill"></span><span>Subscribe</span>
+                    <span class="bi bi-chevron-bar-down"></span></div>
+                </div>
+            </article>
+            <div class="categories">
+                <span>Home</span>
+                <span>Vidoes</span>
+                <span>Shorts</span>
+                <span>Live</span>
+                <span>Playlists</span>
+                <span>Community</span>
+                <span>Channels</span>
+                <span>About</span>
+            </div>
+            <div class="videos">
+            <span>Videos</span>
+            <span class="bi bi-music-player-fill"></span>
+            <span>Play All</span>
+            </div>
+            <div class="thumbnails"></div>
+        </main>
+
+</body>
+</html>
